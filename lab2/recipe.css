@@ -15,6 +15,7 @@ h1,h2{
 	font-size: 18pt;
 	font-weight: normal;
 	display: inline-block;
+	letter-spacing: 0.25em;
 	
 }
 h1{
