@@ -1,0 +1,104 @@
+
+body{
+	color: #404040;
+	background-color:aliceblue;
+	font-size: 8pt;
+	font-family: Verdana, Tahoma, sans-serif;
+	background-image: url("image/background.png");
+	background-attachment: fixed;
+}
+h1{
+	text-align: center;
+	color: black;
+	font-size: 24pt;
+	font-weight: bold;
+	font-family: Tahoma, Verdana, sans-serif;
+	text-shadow: 3px 3px #999999;
+}
+#idbanner{
+	height: 50px;
+	background-image: url("image/bannerbg.png");
+	text-align: center;
+}
+#main{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 4px gray solid ;
+	border-radius: 12px;
+	height:fit-content;
+}
+/*#idoverview{
+	float: right;
+}*/
+#idtop{
+	/*font-size: 50px;*/
+	width: 550px;
+	background-image: url("image/rbg.png");
+	background-repeat: repeat-x;
+	
+}
+#idspantop{
+	position:relative;
+	font-size: 48px;
+	color: red;
+	bottom: 30px;
+	font-weight: bold;
+}
+.sidebar{
+	float: right;
+	background-color:#A2B964;
+	width: 250px;
+	height:fit-content;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+}
+#sidecontent{
+	margin-left: 10px;
+}
+.leftpart{
+	float: left;
+	width: 32%;
+	margin-left:1%;
+}
+.centerpart{
+	float: left;
+	width: 32%;
+	margin-left:2%;
+}
+.footer{
+	clear:both;
+	background-color:#A2B964;
+	border-radius: 0px 0px 8px 8px;
+	height: fit-content;
+	padding: 0;
+}
+.pleft{
+	border: 2px solid gray;
+	background-color: #E8DC9B;
+	border-radius: 10px;
+	padding: 10px;
+}
+.pinfo{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.iconimg{
+	float: left;
+}
+.iconexplain{
+	float: left;
+}
+.dtitle{
+	font-weight: bold;
+	margin-top: 10pt;
+}
+#validator{
+	
+	border: #ea0a0a solid 5px;
+	width: fit-content;
+	text-align: center;
+}
+.validimg{
+	opacity: 0.5;
+}
