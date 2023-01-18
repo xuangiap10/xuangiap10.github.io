@@ -4,6 +4,8 @@ body{
 	background-color:aliceblue;
 	font-size: 11pt;
 	font-family: Georgia, Garamond, serif;
+	background-image: url("image/silverware.jpg");
+	background-attachment: fixed;
 }
 h1,h2{
 	color: #A4A400; /*red=164, green=164, blue=0 */
