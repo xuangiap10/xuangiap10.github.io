@@ -38,6 +38,22 @@ a:hover{
 	text-decoration:underline;
 }
 a{
-	color: red;
 	text-decoration: solid;
+	color:brown;
+}
+li::first-letter{
+	font-size: 150%;
+	
+}
+#para1:hover{
+	transform: scale(1, -1); color:green;
+}
+dt{
+	color: rgb(194, 194, 26);
+	font-weight: bold;
+}
+
+ol {
+    display: flex;
+    flex-direction:column-reverse;
 }
