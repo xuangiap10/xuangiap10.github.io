@@ -44,7 +44,6 @@ h1{
 }
 */
 #idtop{
-	/*font-size: 50px;*/
 	width: 550px;
 	background-image: url("image/rbg.png");
 	background-repeat: repeat-x;
@@ -106,13 +105,10 @@ h1{
 	font-weight: bold;
 	margin-top: 10pt;
 }
-#validator{
-	
-	/*border: #ea0a0a solid 5px;*/
-	width: fit-content;
-	text-align: center;
-	margin-left: 100%;
-	margin-top: 945px;
+#validatorid {
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
 }
 .validimg{
 	opacity: 0.5;
