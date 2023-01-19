@@ -1,0 +1,52 @@
+    /* Some custom styles to beautify this example */
+    .demo-content{
+        padding: 15px;
+        font-size: 18px;
+        background: #dbdfe5;
+        margin-bottom: 5px;
+    }
+    .demo-content.bg-alt{
+        background: #abb1b8;
+    }
+    .header{
+        padding: 15px;
+        background-color:rgb(141, 188, 230);
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .menu{
+        padding: 5px;
+        background-color: green;
+        margin-bottom: 5px;
+    }
+    .childmenu{
+        text-align: center;
+        border-right: solid black 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: fit-content;
+    }
+    .left{ 
+        background-color: rgb(80, 77, 77);
+        padding: 10px;
+        height: 300px;
+		margin-bottom: 5px;
+    }
+    .middle{ 
+        background-color: rgb(238, 114, 114);
+        padding: 10px;
+        height: 300px;
+		margin-bottom: 5px;
+    }
+    .right{ 
+        background-color: bisque;
+        padding: 10px;
+        height: 300px;
+		margin-bottom: 5px;
+    }
+    .cfooter{
+        text-align: center;
+	    background-color: green;
+	    padding: 10px;
+		margin-bottom: 5px;
+    }
