@@ -103,6 +103,8 @@ h1{
 .pinfo{
 	margin-top: 20px;
 	margin-bottom: 20px;
+	/*padding-bottom: 10px ;
+	padding-top: 10px ;*/
 }
 .iconimg{
 	float: left;

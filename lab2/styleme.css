@@ -38,7 +38,7 @@ a:hover{
 	text-decoration:underline;
 }
 a{
-	text-decoration: solid;
+	text-decoration: none;
 	color:brown;
 }
 li::first-letter{
