@@ -52,16 +52,18 @@ h1{
 	background-image: url("image/rbg.png");
 	background-repeat: repeat-x;
 	border-radius: 8px 0px 0px 0px;
+	display: flex;
 }
 #imgtop{
 	border-radius: 8px 0px 0px 0px;
 }
 #idspantop{
-	position:relative;
 	font-size: 48px;
 	color: red;
-	bottom: 30px;
+	/*position:relative;
+	bottom: 25px;*/
 	font-weight: bold;
+	align-self: center;
 }
 .sidebar{
 	float: right;
