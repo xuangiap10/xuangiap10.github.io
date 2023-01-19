@@ -1,0 +1,88 @@
+
+/*body{
+	background-color:aliceblue;
+}*/
+* {
+	box-sizing: border-box;
+  }
+.header{ 
+	grid-area: H;
+	background-color:rgb(141, 188, 230);
+	padding: 10px;
+	text-align: center;
+}
+.menu{ 
+	grid-area: M;
+	background-color: green;
+	padding: 10px;
+}
+.childmenu{
+	text-align: center;
+	border-right: solid black 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.left{ 
+	grid-area: A;
+	background-color: rgb(80, 77, 77);
+	padding: 10px;
+	height: 300px;
+}
+.middle{ 
+	grid-area: B;
+	background-color: rgb(238, 114, 114);
+	padding: 10px;
+	height: 300px;
+}
+.right{ 
+	grid-area: C;
+	background-color: bisque;
+	padding: 10px;
+	height: 300px;
+}
+.footer{ 
+	grid-area: F;
+	text-align: center;
+	background-color: green;
+	padding: 10px;
+}
+@media  screen and ( min-width: 600px) {
+	.grid-container{
+		display: grid;
+		grid-template-areas: 
+		'H H H H H H H H H H H H H H H H H H'
+		'H H H H H H H H H H H H H H H H H H'
+		'M M M M M M M M M M M M M M M M M M'	
+		'A A A A A B B B B B B B B C C C C C'
+		'A A A A A B B B B B B B B C C C C C'
+		'A A A A A B B B B B B B B C C C C C'
+		'A A A A A B B B B B B B B C C C C C'
+		'A A A A A B B B B B B B B C C C C C'
+		'A A A A A B B B B B B B B C C C C C'
+		'A A A A A B B B B B B B B C C C C C'
+		'F F F F F F F F F F F F F F F F F F'
+		'F F F F F F F F F F F F F F F F F F'
+
+		;
+	}
+}
+@media  screen and ( max-width: 600px) {
+	.grid-container{
+		display: grid;
+		grid-template-areas: 
+		'H H H H H H H H H H'
+		'H H H H H H H H H H'
+		'M M M M M M M M M M'	
+		'A A A A A C C C C C'
+		'A A A A A C C C C C'
+		'A A A A A C C C C C'
+		'A A A A A C C C C C'
+		'B B B B B B B B B B'
+		'B B B B B B B B B B'
+		'B B B B B B B B B B'
+		'B B B B B B B B B B'
+		'F F F F F F F F F F'
+		'F F F F F F F F F F'
+		;
+	}
+}
