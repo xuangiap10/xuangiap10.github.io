@@ -27,8 +27,8 @@ h1{
 	border: 4px gray solid ;
 	border-radius: 12px;
 	height:fit-content;
-	float: left;
 }
+/*
 #totalleft{
 	width: 200px;
 	float: left;
@@ -42,9 +42,7 @@ h1{
 	display: inline;
 	list-style-type: none;
 }
-/*#idoverview{
-	float: right;
-}*/
+*/
 #idtop{
 	/*font-size: 50px;*/
 	width: 550px;
@@ -86,6 +84,7 @@ h1{
 	border-radius: 0px 0px 8px 8px;
 	height: fit-content;
 	padding: 0;
+	text-align: center;
 }
 .pleft{
 	border: 2px solid gray;
