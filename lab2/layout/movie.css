@@ -28,6 +28,10 @@ h1{
 	border-radius: 12px;
 	height:fit-content;
 }
+
+.overviewimg{
+	border-radius: 0px 8px 0px 0px;
+}
 /*
 #totalleft{
 	width: 200px;
@@ -47,7 +51,10 @@ h1{
 	width: 550px;
 	background-image: url("image/rbg.png");
 	background-repeat: repeat-x;
-	
+	border-radius: 8px 0px 0px 0px;
+}
+#imgtop{
+	border-radius: 8px 0px 0px 0px;
 }
 #idspantop{
 	position:relative;
@@ -63,6 +70,8 @@ h1{
 	height:fit-content;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 8pt;
+	border-radius: 0px 8px 0px 0px;
+
 }
 #sidecontent{
 	margin-left: 10px;
