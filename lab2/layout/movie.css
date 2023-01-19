@@ -27,6 +27,20 @@ h1{
 	border: 4px gray solid ;
 	border-radius: 12px;
 	height:fit-content;
+	float: left;
+}
+#totalleft{
+	width: 200px;
+	float: left;
+	padding: 10px;
+}
+#totalright{
+	width: 200px;
+	float: left;
+}
+#idtotal div{
+	display: inline;
+	list-style-type: none;
 }
 /*#idoverview{
 	float: right;
@@ -98,6 +112,8 @@ h1{
 	/*border: #ea0a0a solid 5px;*/
 	width: fit-content;
 	text-align: center;
+	margin-left: 100%;
+	margin-top: 945px;
 }
 .validimg{
 	opacity: 0.5;
