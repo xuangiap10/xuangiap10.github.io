@@ -40,11 +40,11 @@ function load(){
 
     function init_animation(){
         usertxt = txtarea.value;
+        /*global ANIMATIONS */ 
         frames = ANIMATIONS[animationtype.value].split("=====\n");
         current_idx = 0;
         txtarea.style.fontSize = fontsize.value;
         txtarea.value = frames[current_idx];
-
         if( turbo.checked == true ){
             speed = 50;
         }else {
