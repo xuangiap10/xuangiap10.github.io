@@ -647,7 +647,7 @@ ANIMATIONS["Exercise"] = ANIMATIONS["exercise"] = ANIMATIONS["EXERCISE"] = EXERC
 ANIMATIONS["Juggler"] = ANIMATIONS["juggler"] = ANIMATIONS["JUGGLER"] = JUGGLER;
 ANIMATIONS["Bike"] = ANIMATIONS["bike"] = ANIMATIONS["BIKE"] = BIKE;
 ANIMATIONS["Dive"] = ANIMATIONS["dive"] = ANIMATIONS["DIVE"] = DIVE; */
-ANIMATIONS.Blank  = "";
+ANIMATIONS.Blank  = BLANK;
 ANIMATIONS.Custom = CUSTOM;   // you could change the value of this in your code
 ANIMATIONS.Exercise = EXERCISE;
 ANIMATIONS.Juggler  = JUGGLER;
