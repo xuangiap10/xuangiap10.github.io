@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input Form</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="inputform.js">  </script>
+
+</head>
+
+<body>
+    <form atcion="" >
+    <div>
+        <fieldset >
+            <legend>submit form</legend>
+            <div>
+                <label>Email Address</label> <br>
+                <input type="text" id="txtemail" placeholder="Email"> <br>
+                <label class="explain" >   we'll never share your email with anyone else </label>
+            </div>
+            <div>
+                <label>Password</label> <br>
+                <input type="text" id="txtpsw" pattern="(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{10,}$" title="at least 10 characters in length and contain
+                 at least one number and one uppercase and lowercase letter." placeholder="Password"> <br>
+                <input type="checkbox" id="checkme"> <label>Check me out</label> <br>
+                <input type="submit" id="submit">
+            </div>
+
+        </fieldset>
+    </div>
+    </form>
+    <div class="extra">
+        <form action="">
+            <label>URL</label>
+            <input type="url"  >
+            <input type="submit" value="go"> <br>
+            <label class="explain" >   url start with http:// or https:// </label>
+        </form>
+    </div>
+
+</body>
+
+</html>

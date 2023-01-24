@@ -1,0 +1,11 @@
+fieldset{
+    width:fit-content
+}
+.explain{
+    color: gray;
+    font-size: 10pt;
+    font-style: italic;
+}
+.extra{
+    margin-top: 20px;
+}

@@ -1,0 +1,104 @@
+.banner{
+    display: flex;
+    background-color: rgb(12, 176, 231);
+    color: white;
+    font-size: 16pt;
+    font-family: 'Courier New', Courier, monospace;
+    height: 50px;
+
+}
+.spanbanner{
+    align-self: center;
+}
+.spanbanner:hover{
+    color: red;
+}
+.bannercorner{
+    position: fixed;
+    top: 20px;
+    right: 10px;
+}
+
+input[type=text]{
+    border: red;
+}
+input[type=button]{
+    font-size: 12pt;
+}
+
+.product,.quantity,.name,.supplier,.price, .date, .blank, .buttonarea{
+    width: 40%;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.product{
+    grid-area: PD;
+    
+}
+.quantity{
+    grid-area: QT;
+}
+.name{
+    grid-area: NM;
+
+}
+.supplier{
+    grid-area: SP;
+
+}
+.price{
+    grid-area: PR;
+
+}
+.date{
+    grid-area: DT;
+
+}
+.productinfo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
+}
+.main{
+    display: grid;
+    grid-template-areas: 
+    "PD PD PD PD QT QT QT QT"
+    "PD PD PD PD QT QT QT QT"
+    "NM NM NM NM SP SP SP SP"
+    "NM NM NM NM SP SP SP SP"
+    "PR PR PR PR DT DT DT DT"
+    "PR PR PR PR DT DT DT DT"
+    "BL BL BL BL BT BT BT BT"
+    "BL BL BL BL BT BT BT BT"
+    ;
+
+}
+
+#productid, #quantityid, #nameid, #selectid, #priceid, #dateid{
+    width: 200%;
+    height: 30px;
+    border: 1px solid grey;
+    margin-left: 10px;
+}
+.explain{
+    margin-left: 10px;
+    color: grey;
+    font-style:italic;
+    font-size: 10pt;
+
+}
+.blank{
+    grid-area: BL;
+}
+.buttonarea{
+    grid-area: BT;
+    /* width: fit-content; */
+    font-size: 15px;
+    width: 85%;
+}
+
+#resetid, #cancelid, #addid{
+    float: right;
+    font-size: 20pt;
+}

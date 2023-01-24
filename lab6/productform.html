@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Input Form</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="product.css">
+
+    <script src="productform.js">  </script>
+
+</head>
+
+<body>
+    <div class="banner">
+        <span class="spanbanner">MUM Golden Dome Market:::SRM System | </span> 
+        <span class="spanbanner"> Products | </span>
+        <span class="spanbanner"> Suppliers</span>
+        <div class="bannercorner">
+            <span>Hello!</span>
+            <input type="button" value="Sign out">
+        </div>
+
+    </div>
+    <div class="productinfo" >
+        <h2> New Product Form</h2>
+        <div class="main" >
+            <div class="product">
+                <label>Product Number</label> <br>
+                <input type="text" id="productid">
+            </div>
+            <div class="quantity">
+                <label>Quantity in stock</label> <br>
+                <input type="text" id="quantityid">
+            </div>
+            <div class="name">
+                <label>Name</label> <br>
+                <input type="text" id="nameid">
+            </div>
+            <div class="supplier">
+                <label>Supplier</label> <br>
+                <select  id="selectid" value="Select a Supplier">
+                    <option>Apple</option>
+                    <option>Samsung</option>
+                </select>
+            </div>
+            <div class="price">
+                <label>Unit Price</label> <br>
+                <input type="text" id="priceid" value="0.0">
+            </div>
+            <div class="date">
+                <label>Date Supplied</label> <br>
+                <input type="datetime" id="dateid" value="yyyy-mm-dd"> <br>
+                <span class="explain">Enter a valid date</span>
+            </div>
+            <div class="blank">
+
+            </div>
+            <div class="buttonarea">
+                <!-- <form class="formclass"> -->
+                    <input type="reset" id="resetid">
+                    <input type="button" id="cancelid" value="Cancel">
+                    <input type="button" id="addid" value="Add Product">
+                <!-- </form> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
