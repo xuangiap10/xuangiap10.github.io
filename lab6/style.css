@@ -18,7 +18,7 @@ fieldset{
 .inputform{
     color: black;
 }
-.inputform input[type=text], input[type=password], input[type=url]{
+.inputform input[type=text], input[type=password], input[type=url], input[type=email]{
     color: black;
     height: 30px;
     width: 80%;
