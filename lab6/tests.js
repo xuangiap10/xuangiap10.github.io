@@ -26,4 +26,3 @@ function verify(){
         });
     });
 }
-//window.onload = verify;
