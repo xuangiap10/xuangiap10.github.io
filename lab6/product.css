@@ -63,7 +63,11 @@ input[type=button]{
 .main{
     display: grid;
     grid-template-areas: 
-    "PD PD PD PD QT QT QT QT"
+    "PD QT"
+    "NM SP"
+    "PR DT"
+    "BL BT";
+/*     "PD PD PD PD QT QT QT QT"
     "PD PD PD PD QT QT QT QT"
     "NM NM NM NM SP SP SP SP"
     "NM NM NM NM SP SP SP SP"
@@ -71,7 +75,14 @@ input[type=button]{
     "PR PR PR PR DT DT DT DT"
     "BL BL BL BL BT BT BT BT"
     "BL BL BL BL BT BT BT BT"
-    ;
+    ; */
+
+}
+#sigoutid{
+    font-family: 'Courier New', Courier, monospace;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 5px;
 
 }
 
