@@ -15,3 +15,20 @@ fieldset{
 .extra{
     margin-top: 20px;
 }
+.inputform{
+    color: black;
+}
+.inputform input[type=text], input[type=password], input[type=url]{
+    color: black;
+    height: 30px;
+    width: 80%;
+
+}
+input[type=submit]{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15pt;
+    height: 30px;
+}
+div{
+    margin-top: 10px;
+}
