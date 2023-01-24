@@ -25,7 +25,8 @@
     </div>
     <div class="productinfo" >
         <h2> New Product Form</h2>
-        <div class="main" >
+        
+        <form class="main" >
             <div class="product">
                 <label>Product Number</label> <br>
                 <input type="text" id="productid">
@@ -41,17 +42,18 @@
             <div class="supplier">
                 <label>Supplier</label> <br>
                 <select  id="selectid" value="Select a Supplier">
+                    <option>Select a Supplier</option>
                     <option>Apple</option>
                     <option>Samsung</option>
                 </select>
             </div>
             <div class="price">
                 <label>Unit Price</label> <br>
-                <input type="text" id="priceid" value="0.0">
+                <input type="text" id="priceid" value="0.0" pattern="([0-9])+(|\.)+([0-9]){1,}$">
             </div>
             <div class="date">
                 <label>Date Supplied</label> <br>
-                <input type="datetime" id="dateid" value="yyyy-mm-dd"> <br>
+                <input type="datetime" id="dateid" value="yyyy-mm-dd" pattern="([0-9]{4})+(-)+([0-9]{1,2})+(-)+[0-9]{1,2}$"> <br>
                 <span class="explain">Enter a valid date</span>
             </div>
             <div class="blank">
@@ -61,13 +63,13 @@
                 <!-- <form class="formclass"> -->
                     <input type="reset" id="resetid">
                     <input type="button" id="cancelid" value="Cancel">
-                    <input type="button" id="addid" value="Add Product">
+                    <input type="submit" id="addid" value="Add Product">
 
 
 
                 <!-- </form> -->
             </div>
-        </div>
+        </form>
     </div>
 
 </body>
