@@ -9,15 +9,11 @@
         },
         /* 5 Define a function reverse() that computes the reversal of a string.*/
         reverse: function (x){
-            let ret="";
-            for(let i = x.length-1; i>=0; i--){
-                ret += x.charAt(i);
-            }
-            return ret;
+            return x.split('').reduce( (a,b) => b+a,"" );
         },
         /* 7 Write a function filterLongWords() that takes an array of words and an integer i 
         and returns the array of words that are longer than i. */
         filterlongWords: function (x, i){
-            return x.filter(s=>s.length>i);
+            return x.filter(s => s.length>i);
         }
     }
