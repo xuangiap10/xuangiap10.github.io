@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>lab8</title>
+    <meta charset="utf-8">
+    <link href="lab8.css" rel="stylesheet">
+    <script src="lab8.js"></script>
+
+</head>
+
+<body>
+<div id="lab7">
+    <h4>Prob1:</h4>
+    <div id="prob1">
+        <pre>
+        x = 1
+        var a = 5;
+        var b = 10;
+        var c = function(a,b,c){
+            console.log(x); //x = undefined - hosted from var x=10
+            console.log(a); //8 = parameter
+            var f= function(a,b,c){
+                b = a;
+                console.log(b); // b = 8 //parameter
+                b = c;
+                var x = 5;
+            }
+            f(a,b,c);
+            console.log(b); //b = 9 parameter
+            var x = 10;
+        }
+        c(8,9,10);
+        console.log(b); //b = 10 global
+        console.log(x); //x = 1 global
+        </pre>
+    </div>
+    <h4>Prob2:</h4>
+    <div id="prob2">
+        <pre>
+        Global Scope: global environment for functions, vars, etc. variable/function defined in global Scope
+            can be accessed from anywhere in JS program
+        Local Scope: inside a function 
+        </pre>
+    </div>
+    <h4>Prob3:</h4>
+    <div id="prob3">
+        <pre>
+            //scope A
+            function xFunc(){
+                //scope B
+                function yFunc(){
+                    //scope C
+                }
+            }
+            a. Do statements in Scope A have access to variables defined in Scope B and C?
+                No
+            b. Do statements in Scope B have access to variables defined in Scope A?
+                Yes
+            c. Do statements in Scope B have access to variables defined in Scope C?
+                No
+            d. Do statements in Scope C have access to variables defined in Scope A?
+                Yes
+            e. Do statements in Scope C have access to variables defined in Scope B?
+                Yes
+        </pre>
+    </div>
+    <h4>Prob4:</h4>
+    <div id="prob4">
+        <pre>
+            var x = 9;
+            function myFunction(){
+                return x*x;
+            }
+            console.log(myFunction()); //81
+            x = 5;
+            console.log(myFunction()); //25
+        </pre>
+    </div>
+    <h4>Prob5:</h4>
+    <div id="prob5">
+        <pre>
+            var foo = 1;
+            function bar(){
+                if (!foo){ //undefined => true
+                    var foo = 10; //block scope, will be hoisted 
+                }
+                console.log(foo); //10
+            }
+            bar();
+        </pre>
+    </div>
+
+
+</div>
+<div class="validator" style="position: fixed; bottom: 0px; right: 0px; opacity: 0.5;">
+    <a  href="https://validator.w3.org/nu/?doc=https://xuangiap10.github.io/lab8/lab8.html">
+        <img src="https://manalabs.org/img/w3c-html.png" alt="html validator" >
+    </a><br>
+    <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://xuangiap10.github.io/lab8/lab8.html">
+        <img src="https://manalabs.org/img/w3c-css.png" alt="Valid CSS!"></a><br>
+
+     <a href="http://mumstudents.org/jshint/check.php?uri=https://xuangiap10.github.io/lab8/lab8.html">
+<img style="width: 88px; height:31px;" src="https://xuangiap10.github.io/lab5/image/jscheck-small.png" alt="JavaScript Lint">
+    </a> 
+
+</div>
+</body>
+
+</html>
