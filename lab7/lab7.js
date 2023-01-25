@@ -41,7 +41,7 @@ function load(){
     Global namespace?
     */
     document.getElementById("prob4").innerHTML= "What simple modification to the JavaScript file can remove all the names from the \
-    Global namespace?==> put all names into new scope and assign to only one global variable"
+    Global namespace?==> put all names into new scope by using IIFE and assign to a global variable"
     /* revealing module pattern */
 
     const fmodule = (function(){
