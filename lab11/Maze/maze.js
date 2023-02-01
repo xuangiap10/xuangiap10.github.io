@@ -34,7 +34,7 @@ $(()=>{
                 gameon = 0;
                 start.css({"left": 0, "top" : 205 });
                 $("#status").text("You Win - Click the \"S\" to begin.");
-                $("#maze .boundary").css({"background-color": "green"})
+                $("#maze .boundary").css({"background-color": "lightgreen"})
             }
         }
     });
