@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W2D1 Quiz</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // initialize mocha
+        mocha.setup('bdd');
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="code.js"></script>
+    <script src="tests.js"></script>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.run();
+
+    </script>
+
+    <div id="control" style="margin-left: 10px">
+        width: <input type="number" id="widthtxt" min="1" value="50">
+        growth: <input type="number" id="growthtxt" min="1" value="10">
+        interval: <input type="number" id="intervaltxt" min="1" value="250">
+        number of circles: <input type="number" id="numbertxt" min="1" value="1" >
+        <button id="startbtn"> Start </button>
+    </div>    
+    <div id="main">
+        
+    </div>
+    <div class="validator" style="position: fixed; bottom: 0px; right: 0px; opacity: 0.5;">
+        <a  href="https://validator.w3.org/nu/?doc=https://xuangiap10.github.io/lab11/CleanScreen/cleanccreen.html">
+            <img src="https://manalabs.org/img/w3c-html.png" alt="html validator" >
+        </a><br>
+        <a href="http://jigsaw.w3.org/css-validator/validator?uri=https://xuangiap10.github.io/lab11/CleanScreen/cleanccreen.html">
+            <img src="https://manalabs.org/img/w3c-css.png" alt="Valid CSS!"></a><br>
+    
+         <a href="http://mumstudents.org/jshint/check.php?uri=https://xuangiap10.github.io/lab11/CleanScreen/cleanccreen.html">
+    <img style="width: 88px; height:31px;" src="https://xuangiap10.github.io/lab5/image/jscheck-small.png" alt="JavaScript Lint">
+        </a> 
+    
+    </div>
+</body>
+
+</html>
