@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Current time</title>
+
+         <% if (hour > 6 && hour < 18) cssfile="day.css";
+            else cssfile="night.css" %>
+        <link href="/css/<%=cssfile%>" rel="stylesheet"> 
+        
+    </head>
+    <body>
+        <form action="/result" method="post">
+            Name <input type="text" name="name"> 
+            Age <input type="text" name="age"> 
+            <input type="submit" value="Submit Query"> 
+        </form>
+    </body>
+
+</html>

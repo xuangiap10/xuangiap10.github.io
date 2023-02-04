@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Current time</title>
+        <% if (hour > 6 && hour < 18) cssfile="day.css";
+            else cssfile="night.css" %>
+        <link href="/css/<%=cssfile%>" rel="stylesheet">
+    </head>
+    <body>
+        This page was loaded at <%=time%>
+    </body>
+
+</html>

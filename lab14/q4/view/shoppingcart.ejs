@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Product</title>
+        <link href="/css/cart.css" rel="stylesheet">
+    </head>
+    <body>
+        <%-include('header.ejs') %>
+        <div id="display">
+            <div>Total Number of Product in Shopping Cart: <strong><%= items.length %></strong> </div>
+            <br>
+            <table id="itemtable" name="itemtable" value="000">
+                <tr class="row">
+                    <th class="col">Name</th>
+                    <th class="col">Price</th>
+                    <th class="col">Quantity</th>
+                    <th class="col">Total Money</th>
+                </tr>
+                <% for (var i = 0; i < items.length; i++) {%>
+                <tr class="row" name="row" id="row">
+                    <td class="col"><%=items[i].getName() %></td>
+                    <td class="col"><%=items[i].getPrice() %></td>
+                    <td class="col"><%=items[i].getQuantity() %></td>
+                    <td class="col"><%=items[i].getQuantity()* items[i].getPrice() %></td>
+                </tr>
+                <% } %>
+        </table>
+        </div>
+        <%-include('footer.ejs') %>
+    </body>
+    
+</html>
