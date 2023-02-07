@@ -84,7 +84,7 @@ $(()=>{
         return (()=>{
             cwidth = cwidth + grow;
 
-            if(cwidth > 200) cwidth = 50;
+            if(cwidth > 300) cwidth = 50;
             let rad = cwidth/2;
             $("#main div").each(function(i, elem){
                 $(elem).css({
