@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Product</title>
+        <link href="/css/cart.css" rel="stylesheet">
+    </head>
+    <body>
+        <%-include('header.ejs') %>
+        <div><a href="/">Home</a></div>
+        <div id="display">
+            
+            <br>
+            <table id="itemtable" name="itemtable" value="000">
+                <tr class="row">
+                    <th class="col">Name</th>
+                    <th class="col">Price</th>
+                    <th class="col">Quantity</th>
+                    <th class="col">Total Money</th>
+                </tr>
+            <% var total = 0; 
+                for ( key in items) {
+                 if ( !items[key] || items[key].quantity == 0) continue; 
+                  total +=  items[key].quantity;     %>
+                <tr class="row" name="row" id="row">
+                    <td class="col"><%=items[key].name %></td>
+                    <td class="col"><%=items[key].price %></td>
+                    <td class="col"><%=items[key].quantity %></td>
+                    <td class="col"><%=items[key].quantity* items[key].price %></td>
+                </tr>
+            <% } %>
+            </table>
+        <div>Total Number of items in Shopping Cart: <strong><%= total %></strong> </div>
+        </div>
+        <%-include('footer.ejs') %>
+    </body>
+    
+</html>

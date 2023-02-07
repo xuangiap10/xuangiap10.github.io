@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab15</title>
+        <link href="/css/<%=cssfile%>" rel="stylesheet"> 
+    </head>
+    <body>
+        <div>
+            <form action="/result" method="post">
+                Name <input type="text" name="name"> 
+                Age <input type="text" name="age"> 
+                <input type="submit" value="Submit Query"> 
+            </form>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <% info.forEach( (element)=> { %>
+                    <tr>
+                        <td><%= element.name %></td>
+                        <td><%= element.age %></td>
+                    </tr>
+                <% }) %>
+            </table>
+        </div>
+     </body>
+     
+</html>

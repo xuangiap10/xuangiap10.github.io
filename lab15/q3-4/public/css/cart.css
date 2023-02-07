@@ -1,0 +1,9 @@
+#itemtable{
+    border: 1px solid black;
+}
+.row, .col{
+    border: 1px solid black;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}

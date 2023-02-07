@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Product</title>
+        <link href="/css/product.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <%-include('header.ejs') %>
+        <div><a href="/addToCart">Cart</a></div>
+        <div class="container">
+            <form action="/addToCart" method="post">
+                <input type="submit" id="submit" value="Add to Card" name="submit">
+                
+            <table id="producttable" name="producttable" value="000">
+                    <tr class="row">
+                        <th class="col">Name</th>
+                        <th class="col">Price</th>
+                        <th class="col">Description</th>
+                        <th class="col">ID</th>
+                        <!-- <th class="col">Select</th> -->
+                        <th class="col">Quantity</th>
+                    </tr>
+                    <% for (var i = 0; i < products.length; i++) {%>
+                    <tr class="row" name="row" id="row">
+                        <td class="col"><%=products[i].getName() %></td>
+                        <td class="col"><%=products[i].getPrice() %></td>
+                        <td class="col"><%=products[i].getDescription() %></td>
+                        <td class="col"><%=products[i].getId() %></td>
+                        <!-- <td class="col box"><input type="checkbox" name="select<%= products[i].getId() %>" 
+                            id="select<%= products[i].getId() %>" value="<%= products[i].getId() %>"> </td> -->
+                        <td class="col box">
+                            <input type="number" name="quantiy" 
+                            id="<%= products[i].getId() %>" value="0"  min="0"> 
+                            <input type="hidden" name="productid" value="<%= products[i].getId() %>">
+                        </td>
+                    </tr>
+                    <% } %>
+            </table>
+        </form>
+
+        </div>
+
+        <%-include('footer.ejs') %>
+    </body>
+    
+</html>
