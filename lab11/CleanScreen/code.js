@@ -54,6 +54,9 @@ $(()=>{
         
         //console.log(numbertxt.val());
         //console.log(main.width());
+        //let text = (/(Start).*/.test(startbtn.text()) ) ? "Stop" : "Start"; 
+        let text = (startbtn.text() == "Start") ? "Stop" : "Start";
+        startbtn.text(text);
         let num = parseInt(numbertxt.val());
         num = (num > 12) ? 12 : num;
         let margin = main.width()/num;
